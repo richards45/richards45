@@ -1,0 +1,17 @@
+﻿# PÁGINA LINKTREE OFICIAL - RICHARDS
+
+Esta carpeta contiene el sitio web listo para usar estilo "Linktree" con diseño masculino, minimalista y moderno para Richards.
+
+## Estructura de archivos:
+- `index.html`: La página principal web con todos los enlaces, iconos oficiales y galería de fotos.
+- `style.css`: La hoja de estilos con tema oscuro premium (dark obsidian), efectos de brillo, animaciones y diseño adaptativo a móviles (iOS/Android).
+- `script.js`: Funcionalidades interactivas (botón de compartir enlace con portapapeles y visualizador lightbox para ver las fotos en pantalla completa).
+- `images/`: Carpeta con las 5 fotos organizadas:
+  - `profile.jpg`: Foto de perfil principal.
+  - `gallery-1.png` a `gallery-4.jpg`: Fotos para la sección de vista previa / galería.
+
+## Cómo usarla:
+1. Haz doble clic en `index.html` para abrirla y probarla en cualquier navegador (Chrome, Edge, Safari, Brave, etc.).
+2. Para subirla a internet de forma gratuita con tu propio enlace:
+   - **Netlify Drop**: Arrastra esta carpeta completa a https://app.netlify.com/drop y obtendrás un enlace público al instante.
+   - **GitHub Pages** o **Vercel**: Sube los archivos a tu repositorio para tenerla en línea con dominio personalizado.
