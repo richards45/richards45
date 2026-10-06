@@ -1,23 +1,103 @@
-﻿# OFFICIAL LINKTREE BIO PAGE - RICHARDS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richards | Official Links</title>
 
-This folder contains the complete, production-ready masculine minimalist bio links website for Richards.
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Richards | Official Links">
+  <meta property="og:description" content="Fitness, photos and updates from Richards.">
+  <meta property="og:image" content="./images/profile.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0b0e">
 
-## Included Links:
-- **OnlyFans VIP**: https://onlyfans.com/richards4545
-- **Fanvue VIP**: https://www.fanvue.com/richards45
-- **Instagram**: https://www.instagram.com/r1chards45/
-- **X (Twitter)**: https://x.com/richards4545
+  <!-- Preconnect & Lightweight Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 
-## File Structure:
-- `index.html`: Main HTML file with all links, official SVG icons, metadata, and photo gallery.
-- `style.css`: Clean Dark Obsidian theme, responsive mobile-first layout, subtle lighting effects, and animations.
-- `script.js`: Interactive features (Native Web Share API + clipboard fallback with toast notification, full-screen image lightbox).
-- `images/`:
-  - `profile.jpg`: High-resolution circular hero profile picture.
-  - `gallery-1.png` to `gallery-4.jpg`: 4 preview lookbook photos with zoom and lightbox viewer.
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-## How to View:
-1. Double-click `index.html` to view it instantly in any web browser (Chrome, Safari, Edge, Firefox).
-2. To host it online for free:
-   - **Netlify Drop**: Simply drag and drop this entire `richards_links` folder into https://app.netlify.com/drop
-   - **GitHub Pages** or **Vercel**: Deploy the repository to connect your custom domain.
+  <!-- Ambient Dark Background -->
+  <div class="ambient-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grain-overlay"></div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <!-- Top Utility Bar -->
+    <header class="top-nav">
+      <div class="badge-status">
+        <span class="status-dot"></span>
+        <span class="status-text">ONLINE NOW</span>
+      </div>
+      <button class="share-btn" id="shareBtn" title="Share profile" aria-label="Share profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <img src="./images/profile.jpg" alt="Richards" class="profile-avatar" width="116" height="116" loading="eager" fetchpriority="high">
+      </div>
+
+      <div class="profile-info">
+        <div class="name-container">
+          <h1 class="profile-name">RICHARDS</h1>
+        </div>
+        <p class="profile-handle">@richards4545</p>
+        <p class="profile-bio">Fitness & Lifestyle</p>
+      </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links-section">
+
+      <a href="https://x.com/richards4545" target="_blank" rel="noopener noreferrer" class="link-card link-x">
+        <div class="link-card-content">
+          <div class="link-icon-box x-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-title">X</span>
+            <span class="link-subtitle">@richards4545 • Updates and photos</span>
+          </div>
+          <div class="link-action">
+            <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="profile-footer">
+      <p class="copyright">© 2026 RICHARDS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Link copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
